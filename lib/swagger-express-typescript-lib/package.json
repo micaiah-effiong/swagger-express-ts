@@ -1,15 +1,15 @@
 {
     "name": "swagger-express-typescript",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "description": "Generate and serve swagger.json",
     "main": "index.js",
     "types": "index.d.ts",
     "typings": "index.d.ts",
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/olivierlsc/swagger-specification-ts.git"
+        "url": "https://github.com/vigneshc91/swagger-express-ts.git"
     },
-    "author": "Olivier LIN-SI-CHENG",
+    "author": "Vignesh Chidambaram",
     "license": "MIT",
     "keywords": [
         "inversify",
@@ -29,9 +29,9 @@
         "rest"
     ],
     "bugs": {
-        "url": "https://github.com/olivierlsc/swagger-specification-ts/issues"
+        "url": "https://github.com/vigneshc91/swagger-express-ts/issues"
     },
-    "homepage": "https://github.com/olivierlsc/swagger-specification-ts#readme",
+    "homepage": "https://github.com/vigneshc91/swagger-express-ts#readme",
     "peerDependencies": {
         "@types/body-parser": "^1.17.0",
         "@types/compression": "0.0.35",
