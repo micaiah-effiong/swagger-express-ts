@@ -243,7 +243,6 @@ export class SwaggerService {
     ): void {
         assert.ok(args, 'Args are required.');
         assert.ok(args.parameters, 'Parameters are required.');
-        assert.ok(!args.parameters.body, 'Parameter body is not required.');
         assert.ok(args.responses, 'Responses are required.');
         this.addOperation('delete', args, target, propertyKey);
     }
@@ -667,6 +666,7 @@ export class SwaggerService {
                     schema.required.push(propetyIndex);
                 }
             }
+            schema.properties = bodyOperationArgsBaseParameter.properties;
         }
         if (bodyOperationArgsBaseParameter.model) {
             const swaggerOperationSchema: ISwaggerOperationSchema = {

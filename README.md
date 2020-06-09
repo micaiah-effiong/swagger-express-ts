@@ -1,21 +1,21 @@
 ![](wiki/img/logo.png)
 
-# swagger-express-ts
+# swagger-express-typescript
 Automatically generate and serve swagger.json v2.0.
 
 ## Getting started
 
-First, install [swagger-express-ts](https://www.npmjs.com/package/swagger-express-ts).
+First, install [swagger-express-typescript](https://www.npmjs.com/package/swagger-express-typescript).
 
 ```sh
-npm install swagger-express-ts --save
+npm install swagger-express-typescript --save
 ```
 
 and [init tsconfig.json](./wiki/installation.md)
 
 ## The Basics
 
-In the examples below, we use [inversify-express-utils](https://www.npmjs.com/package/inversify-express-utils). inversify-express-utils is not required to work with swagger-express-ts.
+In the examples below, we use [inversify-express-utils](https://www.npmjs.com/package/inversify-express-utils). inversify-express-utils is not required to work with swagger-express-typescript.
 
 ### Step 1: configure express
 
@@ -26,8 +26,8 @@ import "reflect-metadata";
 import { Container } from "inversify";
 import { interfaces, InversifyExpressServer, TYPE } from "inversify-express-utils";
 import { VersionController } from "./version/version.controller";
-import * as swagger from "swagger-express-ts";
-import { SwaggerDefinitionConstant } from "swagger-express-ts";
+import * as swagger from "swagger-express-typescript";
+import { SwaggerDefinitionConstant } from "swagger-express-typescript";
 const config = require ( "../config.json" );
 
 // set up container
@@ -298,7 +298,7 @@ Test it on url "/api-docs/swagger".
 
 ## Project example
 
-You can quickly test swagger-express-ts with the project example [example-swagger-express-ts](https://github.com/olivierlsc/example-swagger-express-ts).
+You can quickly test swagger-express-typescript with the project example [example-swagger-express-typescript](https://github.com/olivierlsc/example-swagger-express-typescript).
 
 ## Features and API
 
@@ -315,8 +315,8 @@ You can quickly test swagger-express-ts with the project example [example-swagge
 
 ## For any questions, suggestions, or feature requests
 
-[Please file an issue](https://github.com/olivierlsc/swagger-express-ts/issues)!
+[Please file an issue](https://github.com/olivierlsc/swagger-express-typescript/issues)!
 
 ## Help wanted
 
-swagger-express-ts wants additional maintainers! To maintain and continue to develop this young library, [Please post in this issue](https://github.com/olivierlsc/swagger-express-ts/issues/34).
+swagger-express-typescript wants additional maintainers! To maintain and continue to develop this young library, [Please post in this issue](https://github.com/olivierlsc/swagger-express-typescript/issues/34).

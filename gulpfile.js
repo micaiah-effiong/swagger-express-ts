@@ -6,10 +6,10 @@ const tslint = require('gulp-tslint');
 
 const path = {
     src: 'src/**/*.ts',
-    dist: 'dist/swagger-express-ts',
-    module: 'node_modules/swagger-express-ts',
+    dist: 'dist/swagger-express-typescript',
+    module: 'node_modules/swagger-express-typescript',
     lib: {
-        src: 'lib/swagger-express-ts-lib/src/**/*.ts',
+        src: 'lib/swagger-express-typescript-lib/src/**/*.ts',
     },
 };
 
@@ -53,7 +53,7 @@ function copyFilesInDist() {
             './README.md',
             './LICENSE',
             './CHANGELOG.md',
-            './lib/swagger-express-ts-lib/package.json',
+            './lib/swagger-express-typescript-lib/package.json',
         ])
         .pipe(gulp.dest(path.dist));
 }

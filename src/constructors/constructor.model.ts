@@ -2,7 +2,7 @@ import {
     ApiModel,
     ApiModelProperty,
     SwaggerDefinitionConstant,
-} from 'swagger-express-ts';
+} from 'swagger-express-typescript';
 
 @ApiModel({
     description: 'Description Constructor.',

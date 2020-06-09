@@ -10,7 +10,7 @@ import {
     ApiPath,
     SwaggerDefinitionConstant,
     ApiOperationGet,
-} from 'swagger-express-ts';
+} from 'swagger-express-typescript';
 import * as express from 'express';
 import { CarsService } from './cars.service';
 

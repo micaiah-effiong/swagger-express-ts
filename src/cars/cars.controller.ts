@@ -15,7 +15,7 @@ import {
     ApiOperationPost,
     SwaggerDefinitionConstant,
     ApiOperationPut,
-} from 'swagger-express-ts';
+} from 'swagger-express-typescript';
 import { CarsService } from './cars.service';
 import { CarModel } from './car.model';
 

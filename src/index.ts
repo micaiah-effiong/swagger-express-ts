@@ -8,8 +8,8 @@ import {
     TYPE,
 } from 'inversify-express-utils';
 import { CarsController } from './cars/cars.controller';
-import * as swagger from 'swagger-express-ts';
-import { SwaggerDefinitionConstant } from 'swagger-express-ts';
+import * as swagger from 'swagger-express-typescript';
+import { SwaggerDefinitionConstant } from 'swagger-express-typescript';
 const config = require('../config.json');
 import { CarController } from './cars/car.controller';
 import { CarsService } from './cars/cars.service';

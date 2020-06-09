@@ -18,7 +18,7 @@ export interface IApiPropertyBodyOperationArgsBaseParameter {
 
 export interface IApiBodyOperationArgsBaseParameter
     extends IApiOperationArgsBaseParameter {
-    properties?: { [key: string]: IApiPropertyBodyOperationArgsBaseParameter };
+    properties?: any;
     model?: string;
 }
 
