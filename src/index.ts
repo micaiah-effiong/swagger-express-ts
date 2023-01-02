@@ -12,11 +12,14 @@ import * as swagger from 'swagger-express-typescript';
 import { SwaggerDefinitionConstant } from 'swagger-express-typescript';
 const config = require('../config.json');
 import { CarController } from './cars/car.controller';
+import { CarBulkController } from './cars/carbulk.controller';
 import { CarsService } from './cars/cars.service';
+
 import * as _ from 'lodash';
 
 // import models
-import './cars/car.model';
+import { CarModel } from './cars/car.model';
+import { WheelModel } from './cars/wheel.model';
 import './constructors/constructor.model';
 
 // set up container
@@ -30,6 +33,11 @@ container
     .whenTargetNamed(CarsController.name);
 container
     .bind<interfaces.Controller>(TYPE.Controller)
+    .to(CarBulkController)
+    .inSingletonScope()
+    .whenTargetNamed(CarBulkController.name);
+container
+    .bind<interfaces.Controller>(TYPE.Controller)
     .to(CarController)
     .inSingletonScope()
     .whenTargetNamed(CarController.name);
@@ -37,6 +45,11 @@ container
     .bind<CarsService>(CarsService.name)
     .to(CarsService)
     .inSingletonScope();
+
+container.bind<CarModel>(CarModel.name).to(CarModel);
+container.bind<WheelModel>(WheelModel.name).to(WheelModel);
+
+
 // create server
 const server = new InversifyExpressServer(container);
 
